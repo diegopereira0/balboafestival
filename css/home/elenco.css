@@ -1,0 +1,161 @@
+.elenco-bg {
+  background: #1a1310;
+}
+
+.elenco {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  padding-top: 10.4rem;
+  padding-bottom: 10.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* .elenco-conteudo {
+ grid-column: 1 / 2;
+} */
+
+.elenco > h2,
+.elenco > h3,
+.elenco > h4,
+.elenco > p,
+.elenco-lista {
+  grid-column: 1/2;
+}
+
+.elenco-img {
+  grid-column: 2/-1;
+  grid-row: 1 / 6;
+}
+
+.elenco > h2 {
+  margin-bottom: 5.6rem;
+}
+
+.elenco > h3 {
+  font: 700 6.4rem/1.2 "Inter", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.elenco > h4 {
+  font: 700 2.4rem/1.3 "Inter", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.elenco > p {
+  line-height: 1.65;
+  max-width: 44.3rem;
+  margin-bottom: 4rem;
+}
+
+.elenco-lista {
+  display: flex;
+  gap: 2.4rem;
+  overflow-x: auto;
+  max-width: 42rem;
+}
+
+.elenco-item {
+  flex: 1 0 auto;
+}
+
+.elenco-foto {
+  margin-bottom: 1.8rem;
+}
+
+.elenco-item p {
+  font-size: 1.8rem;
+}
+
+.elenco-item span {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-bottom: 1.8rem;
+}
+
+.cordas {
+  background: url("../../img/icones/cordas-ringue.svg") repeat;
+  min-height: 11.2rem;
+  max-width: 100%;
+}
+
+.blur {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blur-1,
+.blur-2 {
+  content: "";
+  width: 56rem;
+  height: 56rem;
+  border-radius: 50%;
+  filter: blur(200px);
+  z-index: -1;
+}
+
+.blur-1 {
+  background-color: #423733;
+}
+
+.blur-2 {
+  background-color: #724b3d;
+}
+
+@media (max-width: 900px) {
+  .elenco {
+    grid-template-columns: 1fr;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+  }
+
+  .elenco > h2,
+  .elenco > h3,
+  .elenco > h4,
+  .elenco > p {
+    text-align: center;
+  }
+
+  .elenco > h2 {
+    margin-bottom: 3.2rem;
+  }
+
+  .elenco > p {
+    max-width: 100%;
+    margin-bottom: 1.6rem;
+  }
+
+  .elenco > h2,
+  .elenco > h3,
+  .elenco > h4,
+  .elenco > p,
+  .elenco-img,
+  .elenco-lista {
+    grid-column: 1/-1;
+  }
+
+  .elenco-img {
+    grid-row: 5;
+    justify-self: center;
+    margin-bottom: 4rem;
+  }
+
+  .elenco-lista {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .elenco > h3 {
+    font-size: 4rem;
+  }
+}

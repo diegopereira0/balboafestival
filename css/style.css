@@ -1,0 +1,11 @@
+@import "../css/utilities/global.css";
+@import "../css/utilities/tipografia.css";
+@import "../css/utilities/cores.css";
+@import "../css/utilities/componentes.css";
+
+/* Home */
+@import "../css/home/header.css";
+@import "../css/home/festival.css";
+@import "../css/home/elenco.css";
+@import "../css/home/inscricao.css";
+@import "../css/home/footer.css";

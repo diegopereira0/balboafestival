@@ -1,0 +1,22 @@
+.footer-bg {
+  background-color: #1A1310;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 6.4rem;
+  padding-bottom: 8.8rem;
+}
+
+.footer p {
+  font: 400 6.4rem/1.3 "Alfa Slab One", sans-serif;
+  color: var(--cor-p1);
+  text-align: center;
+}
+
+@media (max-width: 350px) {
+  .footer p {
+    font-size: 3.2rem;
+  }
+}

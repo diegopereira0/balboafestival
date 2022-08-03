@@ -1,0 +1,189 @@
+.inscricao-bg {
+  background: #1a1310;
+}
+
+.inscricao {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  column-gap: 3.2rem;
+  padding-top: 8.8rem;
+  position: relative;
+  z-index: 2;
+}
+
+.inscricao-conteudo {
+  position: relative;
+}
+
+.inscricao-info > h2 {
+  margin-bottom: 3.2rem;
+}
+
+.inscricao-info > p {
+  max-width: 37rem;
+  margin-bottom: 4rem;
+}
+
+.inscricao-img {
+  margin-top: 5.6rem;
+  position: relative;
+}
+
+.inscricao-img-blur {
+  content: "";
+  background: #463e3a;
+  width: 51.2rem;
+  height: 51.2rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  left: 100px;
+  filter: blur(300px);
+}
+
+.balboa-banner {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 2rem;
+}
+
+.balboa-banner img {
+  width: 100%;
+}
+
+.formulario div {
+  margin-bottom: 3.2rem;
+}
+
+.formulario div:nth-child(3) {
+  margin-bottom: 3.2rem;
+}
+
+.formulario input,
+.formulario label {
+  display: block;
+}
+
+.formulario label {
+  font: 700 1.4rem/1.3 "Inter", sans-serif;
+  color: var(--cor-p2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+
+.formulario input,
+.formulario select {
+  font: 400 1.6rem/1.5 "Inter", sans-serif;
+  color: #ffffff;
+  background: #31231f;
+  border: 1px solid var(--cor-2);
+  padding: 1.6rem;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.formulario input::placeholder {
+  color: #ffffff;
+}
+
+.local-select select {
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.local-select::after {
+  content: "\25B6";
+  position: relative;
+  left: -3.2rem;
+  color: var(--cor-p2);
+  font-size: 1.3rem;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.botao {
+  cursor: pointer;
+  padding-right: 3.2rem;
+  padding-left: 3.2rem;
+  box-shadow: none;
+}
+
+@media (max-width: 990px) {
+  .inscricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inscricao-conteudo {
+    order: 1;
+  }
+
+  .inscricao-img {
+    order: 2;
+  }
+
+  .inscricao-info h2 {
+    text-align: center;
+  }
+
+  .inscricao-info p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+  .formulario {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    place-self: center;
+  }
+
+  .formulario input,
+  .formulario select {
+    width: 95%;
+  }
+
+  .inscricao-img img {
+    max-height: 700px;
+  }
+
+  .inscricao-img-blur {
+    width: 24rem;
+    height: 24rem;
+    top: 20px;
+    left: 60px;
+    filter: blur(100px);
+  }
+}
+
+@media (max-width: 400px) {
+  .formulario input,
+  .formulario select {
+    width: 100%;
+  }
+
+  .botao {
+    width: 100%;
+  }
+
+  .local-select select {
+    appearance: auto;
+  }
+
+  .local-select::after {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .inscricao-img-blur {
+    display: none;
+  }
+}
